@@ -13,7 +13,7 @@ def get_response_body
 end
 
 def parse_json
-  information = JSON.parse(selfget_response_body)
+  information = JSON.parse(self.get_response_body)
   information.collect do |info|
   info
   end
