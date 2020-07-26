@@ -12,10 +12,10 @@ def get_response_body
   response.body
 end
 
-def parse_json 
+def parse_json
   names = JSON.parse(self.get_names)
   names.collect do |name|
-    name 
-  end 
+    name
+  end
 end
 end
