@@ -20,4 +20,4 @@ end
 end
 
 information = GetRequester.new
-puts information.parse_json.uniq
+puts info.parse_json.uniq
