@@ -14,10 +14,10 @@ end
 
 def parse_json
   information = JSON.parse(self.get_response_body)
-  information.collect do |name, occupation|
+  information.collect do |info|
   end
 end
 end
 
-names = GetRequester.new
-puts names.parse_json.uniq
+information = GetRequester.new
+puts information.parse_json.uniq
