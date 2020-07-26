@@ -14,8 +14,9 @@ end
 
 def parse_json
   information = JSON.parse(self.get_response_body)
-  information.collect do |info|
-  info
+  information.collect do |name, occupation|
+  name
+  occupation
   end
 end
 end
