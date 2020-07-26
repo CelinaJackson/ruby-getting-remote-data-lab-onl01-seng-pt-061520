@@ -11,4 +11,11 @@ def get_response_body
   response = NET::HTTP.get_response(uri)
   response.body
 end
+
+def parse_json 
+  names = JSON.parse(self.get_names)
+  names.collect do |name|
+    name 
+  end 
+end
 end
