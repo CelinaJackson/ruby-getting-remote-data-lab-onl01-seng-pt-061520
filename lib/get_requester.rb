@@ -19,3 +19,6 @@ def parse_json
   end
 end
 end
+
+names = GetRequester.new
+puts names.parse_json.uniq
